@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
 /**
  * @author ileanaoneata on 28.08.2023
@@ -58,5 +59,17 @@ class IndexControllerTest {
 
             System.out.println("I got here 232342434242");
         });
+    }
+
+    @Test
+    void testAssumptionTrue() {
+
+        assumeTrue("GURU".equalsIgnoreCase(System.getenv("GURU_RUNTIME")));
+    }
+
+    @Test
+    void testAssumptionTrueAssumptionIsTrue() {
+
+        assumeTrue("GURU".equalsIgnoreCase("GURU"));
     }
 }
