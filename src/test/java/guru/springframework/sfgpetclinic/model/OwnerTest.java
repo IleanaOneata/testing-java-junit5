@@ -1,18 +1,18 @@
 package guru.springframework.sfgpetclinic.model;
 
-import org.junit.jupiter.api.Tag;
+import guru.springframework.sfgpetclinic.ModelTests;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * @author ileanaoneata on 31.08.2023
  */
 
-@Tag("model")
-class OwnerTest {
+class OwnerTest implements ModelTests {
 
     @Test
     void dependentAssertions() {

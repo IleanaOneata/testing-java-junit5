@@ -1,5 +1,6 @@
 package guru.springframework.sfgpetclinic.controllers;
 
+import guru.springframework.sfgpetclinic.ControllerTests;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.condition.*;
 
@@ -13,8 +14,7 @@ import static org.junit.jupiter.api.Assumptions.assumeTrue;
  * @author ileanaoneata on 28.08.2023
  */
 
-@Tag("controllers")
-class IndexControllerTest {
+class IndexControllerTest implements ControllerTests {
 
     IndexController controller;
 
